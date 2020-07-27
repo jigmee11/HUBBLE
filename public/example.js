@@ -102,7 +102,8 @@ const jump = () => {
     if(spu<=0){
       spu=cs.width
     }
-    if(spu <= cs.width/4+48 && spu >= cs.width/4-80 && y>= height-130 && y<=height-60){
+    if(spu <= cs.width/4+48 && spu >= cs.width/4-100 && y>= height-130 && y<=height-60){
+
       x = cs.width;
       y = -1;
       down = 1;
@@ -135,8 +136,8 @@ const jump = () => {
             puujinhuuruh-=4;
             huuruh();
             if(puujinhuuruh<=-130){
+              window.location.href = 'space-shooter.html';
               clearInterval(niseh)
-              console.log("gg")
             }
           }, 30);
         }
